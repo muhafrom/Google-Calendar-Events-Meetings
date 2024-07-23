@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "da6b2669-ef37-4cee-98f3-1d1497824abc",
+		"name": "Google-Meet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37054206"
+	},
+	"item": [
+		{
+			"name": "scheduleMeeting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"summary\": \"example\",\r\n  \"description\": \"example\",\r\n  \"start\": \"2024-07-29T09:00:00-03:00\",\r\n  \"end\": \"2024-07-29T09:00:00-03:30\",\r\n  \"attendees\": [\r\n    \"temp@mail.com\",\r\n    \"temp@mail.com\",\r\n    \"temp@mail.com\",\r\n    \"temp@mail.com\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/schedule_meeting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedule_meeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scheduleEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"summary\": \"example\",\r\n  \"description\": \"example\",\r\n  \"start\": \"2024-07-29T09:00:00-03:00\",\r\n  \"end\": \"2024-07-29T09:00:00-03:30\",\r\n  \"attendees\": [\r\n    \"temp@mail.com\",\r\n    \"temp@mail.com\",\r\n    \"temp@mail.com\",\r\n    \"temp@mail.com\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/schedule_event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedule_event"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

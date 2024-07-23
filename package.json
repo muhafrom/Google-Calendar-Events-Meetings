@@ -1,0 +1,21 @@
+{
+  "name": "google-calendar-events-meetings",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dayjs": "^1.11.12",
+    "dotenv": "^16.4.5",
+    "env": "^0.0.2",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.1",
+    "nodemon": "^3.1.4",
+    "uuid": "^10.0.0"
+  }
+}
